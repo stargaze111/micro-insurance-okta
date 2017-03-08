@@ -6,7 +6,7 @@
     <h3 class="panel-title">Register Account </h3>
   </div>
 
-  <div *ngIf="isLoggedIn()" class="panel-body">
+  <div *ngIf="error==''&&isAuthenticated" class="panel-body">
         <p>You registration has been successful!</p>
 
   </div>

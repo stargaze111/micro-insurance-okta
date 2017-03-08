@@ -45,7 +45,7 @@ export class RegisterComponent{
                     if (this.token.length != 0) {
                         console.log("SUCCESS length:" + this.token.length);
                         localStorage.setItem("sms_access_token", this.token);
-                        this.router.navigate('/register');
+                        this.router.navigate(['/register']);
                         this.isAuthenticated = true;                        
                     }
                    console.log('step2');
